@@ -100,6 +100,11 @@ public class Cliente {
 		this.dsEmail = dsEmail;
 	}
 	
+	public Cliente(String dsEmail) {
+		super();
+		this.dsEmail = dsEmail;
+	}
+	
 	public Cliente() {
 		super();
 	}

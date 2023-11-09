@@ -46,12 +46,8 @@ public class Bicicleta {
 	public void setTpBicicleta(String tpBicicleta) {
 		this.tpBicicleta = tpBicicleta;
 	}
-	public Bicicleta(int cdBicicleta, int cdCliente, int cdModelo, String cdSerie, double vlBicicleta,
-			String tpBicicleta) {
+	public Bicicleta(String cdSerie, double vlBicicleta, String tpBicicleta) {
 		super();
-		this.cdBicicleta = cdBicicleta;
-		this.cdCliente = cdCliente;
-		this.cdModelo = cdModelo;
 		this.cdSerie = cdSerie;
 		this.vlBicicleta = vlBicicleta;
 		this.tpBicicleta = tpBicicleta;

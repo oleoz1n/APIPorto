@@ -20,14 +20,12 @@ public class Marca {
 	public void setNmMarca(String nmMarca) {
 		this.nmMarca = nmMarca;
 	}
-	public Marca(int cdMarca, String nmMarca) {
+	public Marca(String nmMarca) {
 		super();
-		this.cdMarca = cdMarca;
 		this.nmMarca = nmMarca;
 	}
 	public Marca() {
 		super();
 	}
-	
 	
 }

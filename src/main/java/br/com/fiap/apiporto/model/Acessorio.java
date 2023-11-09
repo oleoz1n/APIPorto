@@ -16,11 +16,8 @@ public class Acessorio {
 
 
 
-	public Acessorio(int cdAcessorio, int cdModelo, int cdBicicleta, String nmAcessorio) {
+	public Acessorio(String nmAcessorio) {
 		super();
-		this.cdAcessorio = cdAcessorio;
-		this.cdModelo = cdModelo;
-		this.cdBicicleta = cdBicicleta;
 		this.nmAcessorio = nmAcessorio;
 	}
 

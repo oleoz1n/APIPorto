@@ -4,8 +4,15 @@ public class Modelo {
 	
 	private int cdModelo;
 	private int cdMarca;
-	private int nrModelo;
+	private Long nrModelo;
+	private String nmModelo;
 	
+	public String getNmModelo() {
+		return nmModelo;
+	}
+	public void setNmModelo(String nmModelo) {
+		this.nmModelo = nmModelo;
+	}
 	public int getCdModelo() {
 		return cdModelo;
 	}
@@ -18,18 +25,19 @@ public class Modelo {
 	public void setCdMarca(int cdMarca) {
 		this.cdMarca = cdMarca;
 	}
-	public int getNrModelo() {
+	public Long getNrModelo() {
 		return nrModelo;
 	}
-	public void setNrModelo(int nrModelo) {
+	public void setNrModelo(Long nrModelo) {
 		this.nrModelo = nrModelo;
 	}
-	public Modelo(int cdModelo, int cdMarca, int nrModelo) {
+		
+	public Modelo(Long nrModelo, String nmModelo) {
 		super();
-		this.cdModelo = cdModelo;
-		this.cdMarca = cdMarca;
 		this.nrModelo = nrModelo;
+		this.nmModelo = nmModelo;
 	}
+	
 	public Modelo() {
 		super();
 	}
