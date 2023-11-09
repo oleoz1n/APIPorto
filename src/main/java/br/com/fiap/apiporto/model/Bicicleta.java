@@ -59,5 +59,10 @@ public class Bicicleta {
 	public Bicicleta() {
 		super();
 	}
+	@Override
+	public String toString() {
+		return "Bicicleta [cdBicicleta=" + cdBicicleta + ", cdCliente=" + cdCliente + ", cdModelo=" + cdModelo
+				+ ", cdSerie=" + cdSerie + ", vlBicicleta=" + vlBicicleta + ", tpBicicleta=" + tpBicicleta + "]";
+	}
 	
 }

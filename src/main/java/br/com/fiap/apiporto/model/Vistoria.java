@@ -8,6 +8,12 @@ public class Vistoria {
 	private Date dtVistoria;
 	private String dsResultado;
 	
+	@Override
+	public String toString() {
+		return "Vistoria [cdVistoria=" + cdVistoria + ", cdBicicleta=" + cdBicicleta + ", dtVistoria=" + dtVistoria
+				+ ", dsResultado=" + dsResultado + "]";
+	}
+	
 	public int getCdVistoria() {
 		return cdVistoria;
 	}

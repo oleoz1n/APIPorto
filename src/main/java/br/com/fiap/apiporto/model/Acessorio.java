@@ -8,6 +8,14 @@ public class Acessorio {
 	
 	
 
+	@Override
+	public String toString() {
+		return "Acessorio [cdAcessorio=" + cdAcessorio + ", cdModelo=" + cdModelo + ", cdBicicleta=" + cdBicicleta
+				+ ", nmAcessorio=" + nmAcessorio + "]";
+	}
+
+
+
 	public Acessorio(int cdAcessorio, int cdModelo, int cdBicicleta, String nmAcessorio) {
 		super();
 		this.cdAcessorio = cdAcessorio;

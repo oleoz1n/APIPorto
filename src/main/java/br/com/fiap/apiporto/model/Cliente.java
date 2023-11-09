@@ -3,6 +3,12 @@ package br.com.fiap.apiporto.model;
 import java.sql.Date;
 
 public class Cliente {
+	@Override
+	public String toString() {
+		return "Cliente [cdCliente=" + cdCliente + ", nm_cliente=" + nm_cliente + ", dtNascimento=" + dtNascimento
+				+ ", rg=" + rg + ", cpf=" + cpf + ", telefone=" + telefone + ", cep=" + cep + ", dsEndereco="
+				+ dsEndereco + ", dsEmail=" + dsEmail + "]";
+	}
 	private int cdCliente;
 	private String nm_cliente;
 	private Date dtNascimento;
@@ -12,7 +18,6 @@ public class Cliente {
 	private String cep;
 	private String dsEndereco;
 	private String dsEmail;
-	private String tpSeguro;
 	
 	public int getCdCliente() {
 		return cdCliente;
@@ -68,14 +73,8 @@ public class Cliente {
 	public void setDsEmail(String dsEmail) {
 		this.dsEmail = dsEmail;
 	}
-	public String getTpSeguro() {
-		return tpSeguro;
-	}
-	public void setTpSeguro(String tpSeguro) {
-		this.tpSeguro = tpSeguro;
-	}
 	public Cliente(int cdCliente, String nm_cliente, Date dtNascimento, String rg, String cpf, String telefone,
-			String cep, String dsEndereco, String dsEmail, String tpSeguro) {
+			String cep, String dsEndereco, String dsEmail) {
 		super();
 		this.cdCliente = cdCliente;
 		this.nm_cliente = nm_cliente;
@@ -86,7 +85,6 @@ public class Cliente {
 		this.cep = cep;
 		this.dsEndereco = dsEndereco;
 		this.dsEmail = dsEmail;
-		this.tpSeguro = tpSeguro;
 	}
 	public Cliente() {
 		super();

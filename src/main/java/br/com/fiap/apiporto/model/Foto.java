@@ -60,6 +60,11 @@ public class Foto {
 	public Foto() {
 		super();
 	}
+	@Override
+	public String toString() {
+		return "Foto [cdFoto=" + cdFoto + ", cdVistoria=" + cdVistoria + ", dtFoto=" + dtFoto + ", dsFoto=" + dsFoto
+				+ ", nmArquivo=" + nmArquivo + ", dsPath=" + dsPath + "]";
+	}
 	
 	
 	

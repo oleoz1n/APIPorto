@@ -33,5 +33,9 @@ public class Modelo {
 	public Modelo() {
 		super();
 	}
+	@Override
+	public String toString() {
+		return "Modelo [cdModelo=" + cdModelo + ", cdMarca=" + cdMarca + ", nrModelo=" + nrModelo + "]";
+	}
 		
 }
