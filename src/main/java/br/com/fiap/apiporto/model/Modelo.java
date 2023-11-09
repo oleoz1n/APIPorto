@@ -1,6 +1,11 @@
 package br.com.fiap.apiporto.model;
 
 public class Modelo {
+	@Override
+	public String toString() {
+		return "Modelo [cdModelo=" + cdModelo + ", cdMarca=" + cdMarca + ", nrRoda=" + nrRoda + ", nrModelo=" + nrModelo
+				+ "]";
+	}
 	private int cdModelo;
 	private int cdMarca;
 	private int nrRoda;

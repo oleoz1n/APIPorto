@@ -3,6 +3,11 @@ package br.com.fiap.apiporto.model;
 import java.sql.Date;
 
 public class Vistoria {
+	@Override
+	public String toString() {
+		return "Vistoria [cdVistoria=" + cdVistoria + ", cdBicicleta=" + cdBicicleta + ", dtVistoria=" + dtVistoria
+				+ ", dsResultado=" + dsResultado + "]";
+	}
 	private int cdVistoria;
 	private int cdBicicleta;
 	private Date dtVistoria;

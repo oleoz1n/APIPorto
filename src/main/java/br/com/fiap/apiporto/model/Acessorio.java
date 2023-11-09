@@ -6,6 +6,11 @@ public class Acessorio {
 	private String nmAcessorio;
 	
 	
+	@Override
+	public String toString() {
+		return "Acessorio [cdAcessorio=" + cdAcessorio + ", cdModelo=" + cdModelo + ", nmAcessorio=" + nmAcessorio
+				+ "]";
+	}
 	public int getCdAcessorio() {
 		return cdAcessorio;
 	}
