@@ -3,11 +3,7 @@ package br.com.fiap.apiporto.model;
 import java.sql.Date;
 
 public class Foto {
-	@Override
-	public String toString() {
-		return "Foto [cdFoto=" + cdFoto + ", cdVistoria=" + cdVistoria + ", dtFoto=" + dtFoto + ", dsFoto=" + dsFoto
-				+ ", nmArquivo=" + nmArquivo + ", dsPath=" + dsPath + "]";
-	}
+	
 	private int cdFoto;
 	private int cdVistoria;
 	private Date dtFoto;

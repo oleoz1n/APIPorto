@@ -1,14 +1,9 @@
 package br.com.fiap.apiporto.model;
 
 public class Modelo {
-	@Override
-	public String toString() {
-		return "Modelo [cdModelo=" + cdModelo + ", cdMarca=" + cdMarca + ", nrRoda=" + nrRoda + ", nrModelo=" + nrModelo
-				+ "]";
-	}
+	
 	private int cdModelo;
 	private int cdMarca;
-	private int nrRoda;
 	private int nrModelo;
 	
 	public int getCdModelo() {
@@ -23,23 +18,16 @@ public class Modelo {
 	public void setCdMarca(int cdMarca) {
 		this.cdMarca = cdMarca;
 	}
-	public int getNrRoda() {
-		return nrRoda;
-	}
-	public void setNrRoda(int nrRoda) {
-		this.nrRoda = nrRoda;
-	}
 	public int getNrModelo() {
 		return nrModelo;
 	}
 	public void setNrModelo(int nrModelo) {
 		this.nrModelo = nrModelo;
 	}
-	public Modelo(int cdModelo, int cdMarca, int nrRoda, int nrModelo) {
+	public Modelo(int cdModelo, int cdMarca, int nrModelo) {
 		super();
 		this.cdModelo = cdModelo;
 		this.cdMarca = cdMarca;
-		this.nrRoda = nrRoda;
 		this.nrModelo = nrModelo;
 	}
 	public Modelo() {

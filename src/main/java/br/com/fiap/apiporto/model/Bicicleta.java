@@ -1,15 +1,9 @@
 package br.com.fiap.apiporto.model;
 
 public class Bicicleta {
-	@Override
-	public String toString() {
-		return "Bicicleta [cdBicicleta=" + cdBicicleta + ", cdCliente=" + cdCliente + ", cdCor=" + cdCor + ", cdModelo="
-				+ cdModelo + ", cdSerie=" + cdSerie + ", vlBicicleta=" + vlBicicleta + ", tpBicicleta=" + tpBicicleta
-				+ "]";
-	}
+	
 	private int cdBicicleta;
 	private int cdCliente;
-	private int cdCor;
 	private int cdModelo;
 	private String cdSerie;
 	private double vlBicicleta;
@@ -27,12 +21,6 @@ public class Bicicleta {
 	}
 	public void setCdCliente(int cdCliente) {
 		this.cdCliente = cdCliente;
-	}
-	public int getCdCor() {
-		return cdCor;
-	}
-	public void setCdCor(int cdCor) {
-		this.cdCor = cdCor;
 	}
 	public int getCdModelo() {
 		return cdModelo;
@@ -58,12 +46,11 @@ public class Bicicleta {
 	public void setTpBicicleta(String tpBicicleta) {
 		this.tpBicicleta = tpBicicleta;
 	}
-	public Bicicleta(int cdBicicleta, int cdCliente, int cdCor, int cdModelo, String cdSerie, double vlBicicleta,
+	public Bicicleta(int cdBicicleta, int cdCliente, int cdModelo, String cdSerie, double vlBicicleta,
 			String tpBicicleta) {
 		super();
 		this.cdBicicleta = cdBicicleta;
 		this.cdCliente = cdCliente;
-		this.cdCor = cdCor;
 		this.cdModelo = cdModelo;
 		this.cdSerie = cdSerie;
 		this.vlBicicleta = vlBicicleta;
