@@ -1,29 +1,14 @@
 package br.com.fiap.apiporto.model;
 
 import java.sql.Date;
+import java.sql.Blob;
 
 public class Foto {
-	
-	private int cdFoto;
-	private int cdVistoria;
 	private Date dtFoto;
 	private String dsFoto;
-	private String nmArquivo;
-	private String dsPath;
-	
-	
-	public int getCdFoto() {
-		return cdFoto;
-	}
-	public void setCdFoto(int cdFoto) {
-		this.cdFoto = cdFoto;
-	}
-	public int getCdVistoria() {
-		return cdVistoria;
-	}
-	public void setCdVistoria(int cdVistoria) {
-		this.cdVistoria = cdVistoria;
-	}
+	private Blob fotoFrente;
+	private Blob fotoLado;
+
 	public Date getDtFoto() {
 		return dtFoto;
 	}
@@ -36,34 +21,27 @@ public class Foto {
 	public void setDsFoto(String dsFoto) {
 		this.dsFoto = dsFoto;
 	}
-	public String getNmArquivo() {
-		return nmArquivo;
+	public Blob getFotoFrente() {
+		return fotoFrente;
 	}
-	public void setNmArquivo(String nmArquivo) {
-		this.nmArquivo = nmArquivo;
+	public void setFotoFrente(Blob fotoFrente) {
+		this.fotoFrente = fotoFrente;
 	}
-	public String getDsPath() {
-		return dsPath;
+	public Blob getFotoLado() {
+		return fotoLado;
 	}
-	public void setDsPath(String dsPath) {
-		this.dsPath = dsPath;
+	public void setFotoLado(Blob fotoLado) {
+		this.fotoLado = fotoLado;
 	}
-	public Foto(int cdFoto, int cdVistoria, Date dtFoto, String dsFoto, String nmArquivo, String dsPath) {
+	public Foto(Date dtFoto, String dsFoto, Blob fotoFrente, Blob fotoLado) {
 		super();
-		this.cdFoto = cdFoto;
-		this.cdVistoria = cdVistoria;
 		this.dtFoto = dtFoto;
 		this.dsFoto = dsFoto;
-		this.nmArquivo = nmArquivo;
-		this.dsPath = dsPath;
+		this.fotoFrente = fotoFrente;
+		this.fotoLado = fotoLado;
 	}
 	public Foto() {
 		super();
-	}
-	@Override
-	public String toString() {
-		return "Foto [cdFoto=" + cdFoto + ", cdVistoria=" + cdVistoria + ", dtFoto=" + dtFoto + ", dsFoto=" + dsFoto
-				+ ", nmArquivo=" + nmArquivo + ", dsPath=" + dsPath + "]";
 	}
 	
 	

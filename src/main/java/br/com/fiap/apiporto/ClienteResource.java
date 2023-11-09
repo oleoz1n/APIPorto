@@ -23,7 +23,9 @@ public class ClienteResource {
 	@Path("{id}")
 	@Produces(MediaType.APPLICATION_JSON)
 	public Response get(@PathParam("id") int id) throws SQLException {
-		
+		// Caso o id seja 0 ele retorna todos os clientes 
+		// Caso seja um numero positivo existente ele retorna o cliente
+		// Caso não seja existente ou inválido ele retorna 404
 		if(id != 0) {
 		var cliente = ClienteService.findById(id);
 		
@@ -70,7 +72,6 @@ public class ClienteResource {
 		var cliente = ClienteService.findById(id);
 		
 		if(cliente == null) {
-			System.out.println("Não encontrada!");
 			return Response.status(Response.Status.NOT_FOUND).build();
 		}
 		

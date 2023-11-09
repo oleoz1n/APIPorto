@@ -1,63 +1,13 @@
 package br.com.fiap.apiporto.model;
 
 public class Acessorio {
-	private int cdAcessorio;
-	private int cdModelo;
-	private int cdBicicleta;
 	private String nmAcessorio;
-	
-	
-
-	@Override
-	public String toString() {
-		return "Acessorio [cdAcessorio=" + cdAcessorio + ", cdModelo=" + cdModelo + ", cdBicicleta=" + cdBicicleta
-				+ ", nmAcessorio=" + nmAcessorio + "]";
-	}
-
 
 
 	public Acessorio(String nmAcessorio) {
 		super();
 		this.nmAcessorio = nmAcessorio;
 	}
-
-
-
-	public int getCdAcessorio() {
-		return cdAcessorio;
-	}
-
-
-
-	public void setCdAcessorio(int cdAcessorio) {
-		this.cdAcessorio = cdAcessorio;
-	}
-
-
-
-	public int getCdModelo() {
-		return cdModelo;
-	}
-
-
-
-	public void setCdModelo(int cdModelo) {
-		this.cdModelo = cdModelo;
-	}
-
-
-
-	public int getCdBicicleta() {
-		return cdBicicleta;
-	}
-
-
-
-	public void setCdBicicleta(int cdBicicleta) {
-		this.cdBicicleta = cdBicicleta;
-	}
-
-
 
 	public String getNmAcessorio() {
 		return nmAcessorio;

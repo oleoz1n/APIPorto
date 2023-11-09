@@ -2,8 +2,6 @@ package br.com.fiap.apiporto.model;
 
 public class Modelo {
 	
-	private int cdModelo;
-	private int cdMarca;
 	private Long nrModelo;
 	private String nmModelo;
 	
@@ -12,18 +10,6 @@ public class Modelo {
 	}
 	public void setNmModelo(String nmModelo) {
 		this.nmModelo = nmModelo;
-	}
-	public int getCdModelo() {
-		return cdModelo;
-	}
-	public void setCdModelo(int cdModelo) {
-		this.cdModelo = cdModelo;
-	}
-	public int getCdMarca() {
-		return cdMarca;
-	}
-	public void setCdMarca(int cdMarca) {
-		this.cdMarca = cdMarca;
 	}
 	public Long getNrModelo() {
 		return nrModelo;
@@ -41,9 +27,4 @@ public class Modelo {
 	public Modelo() {
 		super();
 	}
-	@Override
-	public String toString() {
-		return "Modelo [cdModelo=" + cdModelo + ", cdMarca=" + cdMarca + ", nrModelo=" + nrModelo + "]";
-	}
-		
 }

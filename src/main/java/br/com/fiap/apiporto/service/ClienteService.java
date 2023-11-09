@@ -8,7 +8,7 @@ import br.com.fiap.apiporto.data.ClienteDao;
 import br.com.fiap.apiporto.model.Cliente;
 
 public class ClienteService {
-	
+
 	private static boolean validar(Cliente cliente) throws SQLException {
 		/* TRASNFORMA A DATA DE NASCIMENTO EM NUMERO DE IDADE*/
 		LocalDate dataNascimentoLocalDate = cliente.getDtNascimento().toLocalDate();

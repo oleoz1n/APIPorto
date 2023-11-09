@@ -3,12 +3,6 @@ package br.com.fiap.apiporto.model;
 import java.sql.Date;
 
 public class Cliente {
-	@Override
-	public String toString() {
-		return "Cliente [cdCliente=" + cdCliente + ", nmCliente" + nmCliente + ", dtNascimento=" + dtNascimento
-				+ ", rg=" + rg + ", cpf=" + cpf + ", telefone=" + telefone + ", cep=" + cep + ", dsEndereco="
-				+ dsEndereco + ", dsEmail=" + dsEmail + "]";
-	}
 	private int cdCliente;
 	private String nmCliente;
 	private Date dtNascimento;
