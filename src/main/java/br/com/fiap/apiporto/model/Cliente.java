@@ -5,12 +5,12 @@ import java.sql.Date;
 public class Cliente {
 	@Override
 	public String toString() {
-		return "Cliente [cdCliente=" + cdCliente + ", nm_cliente=" + nm_cliente + ", dtNascimento=" + dtNascimento
+		return "Cliente [cdCliente=" + cdCliente + ", nmCliente" + nmCliente + ", dtNascimento=" + dtNascimento
 				+ ", rg=" + rg + ", cpf=" + cpf + ", telefone=" + telefone + ", cep=" + cep + ", dsEndereco="
 				+ dsEndereco + ", dsEmail=" + dsEmail + "]";
 	}
 	private int cdCliente;
-	private String nm_cliente;
+	private String nmCliente;
 	private Date dtNascimento;
 	private String rg;
 	private String cpf;
@@ -25,11 +25,11 @@ public class Cliente {
 	public void setCdCliente(int cdCliente) {
 		this.cdCliente = cdCliente;
 	}
-	public String getNm_cliente() {
-		return nm_cliente;
+	public String getNmCliente() {
+		return nmCliente;
 	}
-	public void setNm_cliente(String nm_cliente) {
-		this.nm_cliente = nm_cliente;
+	public void setNmCliente(String nmCliente) {
+		this.nmCliente = nmCliente;
 	}
 	public Date getDtNascimento() {
 		return dtNascimento;
@@ -73,11 +73,11 @@ public class Cliente {
 	public void setDsEmail(String dsEmail) {
 		this.dsEmail = dsEmail;
 	}
-	public Cliente(int cdCliente, String nm_cliente, Date dtNascimento, String rg, String cpf, String telefone,
+	public Cliente(int cdCliente, String nmCliente, Date dtNascimento, String rg, String cpf, String telefone,
 			String cep, String dsEndereco, String dsEmail) {
 		super();
 		this.cdCliente = cdCliente;
-		this.nm_cliente = nm_cliente;
+		this.nmCliente = nmCliente;
 		this.dtNascimento = dtNascimento;
 		this.rg = rg;
 		this.cpf = cpf;
