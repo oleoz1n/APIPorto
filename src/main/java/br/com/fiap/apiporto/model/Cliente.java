@@ -86,6 +86,20 @@ public class Cliente {
 		this.dsEndereco = dsEndereco;
 		this.dsEmail = dsEmail;
 	}
+	
+	public Cliente(String nmCliente, Date dtNascimento, String rg, String cpf, String telefone,
+			String cep, String dsEndereco, String dsEmail) {
+		super();
+		this.nmCliente = nmCliente;
+		this.dtNascimento = dtNascimento;
+		this.rg = rg;
+		this.cpf = cpf;
+		this.telefone = telefone;
+		this.cep = cep;
+		this.dsEndereco = dsEndereco;
+		this.dsEmail = dsEmail;
+	}
+	
 	public Cliente() {
 		super();
 	}

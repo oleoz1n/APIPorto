@@ -5,8 +5,10 @@ import java.util.ArrayList;
 
 import br.com.fiap.apiporto.model.Cliente;
 import br.com.fiap.apiporto.service.ClienteService;
+import jakarta.ws.rs.DELETE;
 import jakarta.ws.rs.GET;
 import jakarta.ws.rs.POST;
+import jakarta.ws.rs.PUT;
 import jakarta.ws.rs.Path;
 import jakarta.ws.rs.PathParam;
 import jakarta.ws.rs.Produces;
@@ -49,5 +51,30 @@ public class ClienteResource {
 			return Response.status(Response.Status.BAD_REQUEST).build();
 		}
 		return Response.ok(cliente).build();
+	}
+	
+	@PUT
+	@Path("{id}")
+	@Produces(MediaType.APPLICATION_JSON)
+	public Response update(@PathParam("id") int id, Cliente cliente) {
+		cliente.setCdCliente(id);
+		if(!ClienteService.update(cliente)) {
+			return Response.status(Response.Status.BAD_REQUEST).build();
+		}
+		return Response.ok(cliente).build();
+	}
+	
+	@DELETE
+	@Path("{id}")
+	public Response destroy(@PathParam("id") int id) throws SQLException {
+		var cliente = ClienteService.findById(id);
+		
+		if(cliente == null) {
+			System.out.println("Não encontrada!");
+			return Response.status(Response.Status.NOT_FOUND).build();
+		}
+		
+		ClienteService.delete(id);
+		return Response.noContent().build();
 	}
 }
