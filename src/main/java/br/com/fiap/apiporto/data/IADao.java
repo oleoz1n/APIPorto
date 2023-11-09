@@ -40,18 +40,18 @@ public class IADao {
 	private static void createFoto(IA ia) throws SQLException {
 		var con = ConnectionFactory.getConnection();
 		
-		var vistoriaa = con.prepareStatement("select cd_vistoria from T_ECS_VISTORIA where DT_VISTORIA = ? and T_ECS_BIKE_CD_BICICLETA = ?");
+		var vistoriaa = con.prepareStatement("select cd_vistoria from T_ECS_VIST where DT_VISTORIA = ? and T_ECS_BIKE_CD_BICICLETA = ?");
 		vistoriaa.setDate(1, ia.getVistoria().getDtVistoria());
 		vistoriaa.setString(2, returnCdBicicleta(ia));
 		var vistoria = vistoriaa.executeQuery();
 		vistoria.next();
+		System.out.println(vistoria.getString("cd_vistoria"));
 		
-		var ps = con.prepareStatement("insert into T_ECS_FOTO (T_ECS_VIST_CD_VISTORIA, DT_FOTO, DS_FOTO, FOTO_FRENTE, FOTO_LADO) values(?,?,?,?,?)");
+		var ps = con.prepareStatement("insert into T_ECS_FOTO (T_ECS_VIST_CD_VISTORIA, DT_FOTO, DS_FOTO) values(?,?,?)");
 		ps.setString(1, vistoria.getString("cd_vistoria"));
 		ps.setDate(2, ia.getFoto().getDtFoto());
 		ps.setString(3, ia.getFoto().getDsFoto());
-		ps.setBlob(4, ia.getFoto().getFotoFrente());
-		ps.setBlob(5, ia.getFoto().getFotoLado());
+
 		con.close();
 	}
 	

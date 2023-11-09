@@ -2,15 +2,9 @@ package br.com.fiap.apiporto.model;
 
 public class IA {
 	
-	private Foto foto;
 	private Vistoria vistoria;
 	private BikeIA bike;
-	public Foto getFoto() {
-		return foto;
-	}
-	public void setFoto(Foto foto) {
-		this.foto = foto;
-	}
+	private Foto foto;
 	public Vistoria getVistoria() {
 		return vistoria;
 	}
@@ -23,11 +17,17 @@ public class IA {
 	public void setBike(BikeIA bike) {
 		this.bike = bike;
 	}
-	public IA(Foto foto, Vistoria vistoria, BikeIA bike) {
-		super();
+	public Foto getFoto() {
+		return foto;
+	}
+	public void setFoto(Foto foto) {
 		this.foto = foto;
+	}
+	public IA(Vistoria vistoria, BikeIA bike, Foto foto) {
+		super();
 		this.vistoria = vistoria;
 		this.bike = bike;
+		this.foto = foto;
 	}
 	public IA() {
 		super();
