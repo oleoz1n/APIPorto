@@ -8,6 +8,7 @@ import br.com.fiap.apiporto.model.IA;
 public class IAService {
 
 	public static boolean create(IA ia) {
+		if(!ia.getFoto().getUrlFoto().startsWith("http")) return false;
 		try {
 			IADao.create(ia);
 		} catch (SQLException e) {
