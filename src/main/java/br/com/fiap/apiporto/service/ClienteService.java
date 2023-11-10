@@ -60,6 +60,7 @@ public class ClienteService {
 			if(!validar(cliente)) {
 				return false;
 			}
+			if(ClienteDao.findById(cliente.getCdCliente()) == null) return false;
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
