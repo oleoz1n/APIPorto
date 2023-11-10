@@ -45,7 +45,6 @@ public class IADao {
 		vistoriaa.setString(2, returnCdBicicleta(ia));
 		var vistoria = vistoriaa.executeQuery();
 		vistoria.next();
-		System.out.println(vistoria.getString("cd_vistoria"));
 		
 		var ps = con.prepareStatement("insert into T_ECS_FOTO (T_ECS_VIST_CD_VISTORIA, DT_FOTO, DS_FOTO, URL_FOTO) values(?,?,?,?)");
 		ps.setString(1, vistoria.getString("cd_vistoria"));
